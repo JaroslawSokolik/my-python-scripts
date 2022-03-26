@@ -56,9 +56,13 @@ print(chr(48))
 # classmethod()
 # Returns a class method for a given method.
 
+
 class fruit:
+
     def sayhi(self):
         print("Hi, I'm a fruit")
+
+
 fruit.sayhi = classmethod(fruit.sayhi)
 fruit.sayhi
 
@@ -81,3 +85,34 @@ print(list(filter(lambda x: x % 2 == 0, [1, 2, 0, False])))
 # It converts an int or a compatible value into a float
 
 print(float(12))
+
+# format()
+# Function formats a specified value into a specified format
+
+print(format(0.5, '%'))
+
+# Frozenset()
+# Freeze the list, and make it unchangeable
+
+mylist = ['apple', 'banana', 'cherry']
+x = frozenset(mylist)
+x[1] = "strawberry"
+print(x)
+
+# getattr()
+# Function returns the value of the specified attribute from the specified 
+# object
+
+
+class Person:
+    name = "John"
+    age = 36
+    country = "Norway"
+
+
+x = getattr(Person, 'age')
+
+print(x)
+
+# globals()
+
