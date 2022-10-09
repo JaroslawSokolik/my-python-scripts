@@ -7,12 +7,10 @@ class Fruit():
         
         print("My name is " + self.name + " and the colour is " + self.colour)
         
-apple = Fruit("apple", "red" )  # creating instance of the class with arguments - variable apple is an object
+apple = Fruit("apple", "red")  # creating instance of the class with arguments - variable apple is an object
 info = apple.details()
 
 """
 Init is the place where we initialize all out attributes, the reason why they're there is because init is automatically
 executed with every new class instance.
-
-
 """
